@@ -31,3 +31,23 @@ Installs Visual Studio Code on Windows instances for development environments.
   - SSM Agent installed and running
   - Appropriate IAM instance profile
   - Internet connectivity or VPC endpoints for AWS services
+
+## Usage
+
+### Using Components in Image Builder
+
+1. **Create a Component in AWS Console:**
+
+   ```text
+   AWS Console → EC2 Image Builder → Components → Create component
+   ```
+
+2. **Import Component Definition:**
+   - Choose "Define document content"
+   - Copy and paste the YAML content from the desired component file
+   - Configure component version and description
+
+3. **Add to Image Recipe:**
+   - Create or update an image recipe
+   - Add the component to the build or test phase
+   - Configure component parameters as needed
